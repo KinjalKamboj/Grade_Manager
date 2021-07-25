@@ -1,0 +1,11 @@
+Welcome! If you're a grade 12 student, this calculator is for you! 
+It will help you to calculate your top six average, what mark you 
+need on your final to reach your desired average, list any 
+applicable scholarships you can apply to and help you to create 
+a transcript on the console with your grades before you log out. 
+To get started, go back and enter the username and password 
+listed below:
+
+Username: marciestudent               Password: 8896754
+
+
