@@ -318,7 +318,7 @@ public class GradeCalculator extends JFrame implements ActionListener {
 			
 			else if (grade.getSelectedIndex() == 1) {
 				scholarshipPanel.remove(scholarList);
-				scholarList.setText("Wait for next year—keep up your grades and extracurriculars!");
+				scholarList.setText("Wait for next yearÂ—keep up your grades and extracurriculars!");
 				scholarshipPanel.add(scholarList);
 				validate();
 				repaint();
@@ -381,25 +381,4 @@ public class GradeCalculator extends JFrame implements ActionListener {
 	     }
 		
 	}
-			 /*
-				String list = "Brampton CARP Bursary Award ($500) "
-						+ "Annual Clarkson Performing Arts Scholarship ($1000) "
-						+ "The Canadian Federation of University Women ($2000) "
-						+ "Nelson Scholarship ($10,000)";
-				scholarList.setText(list);
-				}
-				/*
-				scholarList2 = new JLabel("Annual Clarkson Music, Theatre, Performing Arts Scholarship ($1000)");
-				scholarList3 = new JLabel("The Canadian Federation of University Women ($2000)");
-				scholarList4 = new JLabel("Nelson Scholarship ($10,000)");
-				scholarList1.setText("Brampton CARP Bursary Award ($500)");
-				scholarshipPanel.add(scholarList1);
-				scholarshipPanel.add(scholarList2);
-				scholarshipPanel.add(scholarList3);
-				scholarshipPanel.add(scholarList4);
-				validate();
-				repaint();
-		*/	     
 }
-
-
