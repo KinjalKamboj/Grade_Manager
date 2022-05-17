@@ -77,10 +77,9 @@ public class Instructions extends JFrame {
         	System.out.println("Exception-ERROR");
     }
         
-        //Adding action listener
+        //Adding action listener for back button
         back.addActionListener(a -> {
         	TitleFrame frame1 = new TitleFrame();
-        	//frame1.TitleFrame();
         	this.setVisible(false);
         	validate();
         	
