@@ -202,7 +202,6 @@ public class GradeCalculator extends JFrame implements ActionListener {
 		BorderFactory.createEmptyBorder(13, 15, 0, 15)));
 		
 		scholarshipPanel.add(scholarshipLabel);
-		//scholarshipPanel.add(scholarList);
 		conjoinPanel2.add(scholarshipPanel);
 		
 		//Adding both panels to one panel
@@ -212,6 +211,8 @@ public class GradeCalculator extends JFrame implements ActionListener {
 		conjoinPanel3.add(conjoinPanel2);
 		
 		//Adding action listeners
+		
+		// Calculate button action listener
 		calculate.addActionListener(a -> {
 			try {
 				double m1 = Double.parseDouble(new String(mark1.getText()));
@@ -227,6 +228,7 @@ public class GradeCalculator extends JFrame implements ActionListener {
 			}		
 		});
 		
+		//Clear button action listener
 		clear.addActionListener(a -> {
 			try {
 				clearText();
@@ -237,6 +239,7 @@ public class GradeCalculator extends JFrame implements ActionListener {
 			
 		});
 		
+		// Logout button action listener
 		logOut.addActionListener(a -> {
 			try {
 				int option = JOptionPane.showConfirmDialog(this, "Are you sure you wish to log out?", "Log Out Confirmation", JOptionPane.YES_NO_OPTION);
@@ -256,6 +259,7 @@ public class GradeCalculator extends JFrame implements ActionListener {
 			}
 		});
 		
+		// Calculate desired mark action listener
 		calculateDesired.addActionListener(a -> {
 			try {
 				calculateNeededMark();
@@ -266,16 +270,12 @@ public class GradeCalculator extends JFrame implements ActionListener {
 			
 		});
 		
+		//Combobox (current grade) action listener
 		grade.addActionListener(this);
 		
 		//Adding panels
 		getContentPane().add(secondTitlePanel, BorderLayout.NORTH); 
-		//getContentPane().add(inputPanel, BorderLayout.WEST);
-		//getContentPane().add(buttonsPanel, BorderLayout.SOUTH);
-		//getContentPane().add(conjoinPanel);
-		//getContentPane().add(conjoinPanel2, BorderLayout.CENTER);
 		getContentPane().add(conjoinPanel3);
-		
 		
 		setSize(850, 450);
 		setTitle("St.Marcellinus Grade Calculator");
@@ -318,7 +318,7 @@ public class GradeCalculator extends JFrame implements ActionListener {
 			
 			else if (grade.getSelectedIndex() == 1) {
 				scholarshipPanel.remove(scholarList);
-				scholarList.setText("Wait for next yearkeep up your grades and extracurriculars!");
+				scholarList.setText("Wait for next year, keep up your grades and extracurriculars!");
 				scholarshipPanel.add(scholarList);
 				validate();
 				repaint();
@@ -362,7 +362,7 @@ public class GradeCalculator extends JFrame implements ActionListener {
 	        	System.out.println("Enter course name:");
 	        	courseName = input.next();
 	            writeFile.newLine();
-	            System.out.print("Enter test score: ");
+	            System.out.print("Enter course average: ");
 	            finalAvg = input.nextDouble();
 	            writeFile.newLine();
 	            writeFile.write(courseName + ": " + String.valueOf(finalAvg));
