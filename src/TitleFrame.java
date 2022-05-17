@@ -51,7 +51,6 @@ public class TitleFrame extends JFrame {
 		logInInput.setLayout(new BoxLayout(logInInput, BoxLayout.Y_AXIS));
 		
 		username = new JLabel("Username:");
-		//username.setHorizontalAlignment(JLabel.LEFT);
 		inputUsername = new JTextField(8);
 		inputUsername.setMaximumSize(new Dimension(150, 20));
 		
@@ -91,7 +90,7 @@ public class TitleFrame extends JFrame {
 		getContentPane().add(firstTitlePanel, BorderLayout.NORTH);
 		getContentPane().add(logInInput, BorderLayout.CENTER);
 		
-		//Adding action listeners
+		//Adding action listeners for login and instruction buttons
 		try {
 		login.addActionListener(a -> {
 			if (inputUsername.getText().equals("marciestudent") && (new String (inputPassword.getPassword()).equals("8896754"))) {
@@ -114,7 +113,7 @@ public class TitleFrame extends JFrame {
 		});
 		}
 		catch (Exception e) {
-			JOptionPane.showMessageDialog(this, "Error — try again", "ERROR", JOptionPane.OK_OPTION);
+			JOptionPane.showMessageDialog(this, "Error â€” try again", "ERROR", JOptionPane.OK_OPTION);
 		}
 		
 		setSize(520,300);
