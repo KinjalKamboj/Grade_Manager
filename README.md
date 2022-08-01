@@ -37,6 +37,6 @@ CONTENTS OF THIS FILE
 ------------------------------------
 # FAQ
    * Q: How do I login?
-   * A: The required username and password is given in the Instructions frame and the TitleFrame file. To access the instructions, click the instructions button on the login frame after you've opened the application. A more time consuming method would be to search for it amongst the code in the TitleFrame file.
+    * A: The required username and password is given in the Instructions frame and the TitleFrame file. To access the instructions, click the instructions button on the login frame after you've opened the application. A more time consuming method would be to search for it amongst the code in the TitleFrame file.
    * Q: I don't see the option to create my transcript, how do I create one?
-   * A: Click on the logout button on the main frame after you've logged in. It will display another pane that will ask the user to confirm if they wish to exit the program. Click yes, and another pane will show up asking if you wish to create your transcript before you exit. After you've clicked yes again, the program will prompt you to enter the required information on the console.
+    * A: Click on the logout button on the main frame after you've logged in. It will display another pane that will ask the user to confirm if they wish to exit the program. Click yes, and another pane will show up asking if you wish to create your transcript before you exit. After you've clicked yes again, the program will prompt you to enter the required information on the console.
